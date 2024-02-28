@@ -1,4 +1,4 @@
-# Импортируем kivy и все необходимые 
+# Импортируем kivy и все необходимые бибилиотеки, подробнее смотрим https://kivy.org/doc/stable/
 import kivy
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
@@ -7,7 +7,7 @@ from kivy.uix.textinput import TextInput
 
 class CalculatorApp(App):
 
-    def build(self):
+    def build(self): # 
         self.expression = ""
         layout = GridLayout(cols=1)
 
@@ -41,4 +41,4 @@ class CalculatorApp(App):
         self.text_input.text = self.expression
 
 if __name__ == '__main__':
-    CalculatorApp().run()
+    CalculatorApp().run() #запуск приложения
