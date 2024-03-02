@@ -13,7 +13,7 @@ class CalculatorApp(App):
         self.expression = ""
         # Создание кнопок
         buttons_layout = BoxLayout()
-        normal_btn = Button(text='Обычный', size_hint=(1, 0.1), on_press = self.pass_func)
+        normal_btn = Button(text='Обычный', size_hint=(1, 0.1), on_press = CalculatorApp.build)
         engineer_btn = Button(text='Инженерный', size_hint=(1, 0.1), on_press = self.pass_func)
         extra_btn = Button(text = "Дополнительный", size_hint=(1, 0.1), on_press = self.pass_func)
 
@@ -42,8 +42,11 @@ class CalculatorApp(App):
 
         return layout
     
-    def pass_func(self, instance):
-        self.expression = "Error"
+    def engineer(self, instance):
+        # очищаем экран
+        self.text_input.text = ""
+        self.expression = ""
+        
     
     def on_button_press(self, instance): # Метод-обработчик нажатия на кнопку
         if instance.text == 'C': # Если нажата кнопка 'C', сбросить выражение

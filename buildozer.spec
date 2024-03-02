@@ -12,7 +12,7 @@ title = CalculatorPRO
 package.name = calculatorpro
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = ru.ZlataDaniil.calculatorpro
+package.domain = ru.Zlata&Daniil
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -34,7 +34,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 0.3
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
